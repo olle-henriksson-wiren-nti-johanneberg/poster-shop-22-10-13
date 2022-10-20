@@ -1,5 +1,122 @@
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'basic-sans', sans-serif;
+}
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    'hd'
+    'mn'
+    'ft';
+    grid-template-rows: 85vh auto 40vh;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+    
+}
+header {
+    grid-area: hd;
+}
+header img {
+    z-index: 0;
+}
+.burgerMenu {
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20px;
+    width: 40px;
+    position: absolute;
+}
+.line {
+    border-radius: 1em;
+}
+main {
+    background-color: black;
+    grid-area: mn;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+.mainSmallIconsBox {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    justify-content: space-evenly;
+}
+.mainSmallIcon {
+    display: flexbox;
+    flex-direction: column;
+    width: 24vw;
+    height: auto;
+    text-align: left;
+}
+.mainSmallIcon p {
+    height: 15vh;
+    margin-bottom: 4em;
+}
+.mainSmallIcon img {
+    width: 24vw;
+}
+.buttonRed {
+    width: 45%;
+    color: white;
+    background-color:#E83F57;
+    height: 2.33em;
+    border: none;
+    border-radius: 0.33em;
+    
+}
+footer {
+    display: flex;
+    justify-content: center;
+    grid-area: ft;
+    width: 100%;
+    background-color: #333333;
+}
+.footerBox {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.footerPara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    padding-top: 4em;
+}
+#footerNav, #footerAddress, #footerSocial {
+    width: 33%;
+}
+.footerPara h1 {
+    font-weight: bolder;
+    margin-bottom: 0.33em;
+    font-size: 2em;
+}
+.footerPara p {
+    font-size: 0.88em;
+}
+.footerSocialIconBox {
+    justify-content: space-evenly;
+    display: flex;
+    width: 50%;
+}
+.footerSocialIconBox img {
+    cursor: pointer;
+    fill: white;
+}
+#twt:hover {
+    fill: #3de07e;
+    
 }
